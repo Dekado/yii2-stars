@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Yii2 stars behavior
 ===================
 Yii2 stars behavior
@@ -29,3 +30,6 @@ Once the extension is installed, simply use it in your code by  :
 
 ```php
 <?= \rico\yii2stars\AutoloadExample::widget(); ?>```
+=======
+# yii2-stars
+>>>>>>> 563bdcee1f8da82537090808db6d2ca25fb43402
