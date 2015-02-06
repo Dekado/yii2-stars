@@ -1,0 +1,21 @@
+{
+    "name": "costa-rico/yii2-stars",
+    "description": "Yii2 stars behavior",
+    "type": "yii2-extension",
+    "keywords": ["stars","rating","yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Costa",
+            "email": "costa.mail@ya.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "rico\\yii2stars\\": ""
+        }
+    }
+}
