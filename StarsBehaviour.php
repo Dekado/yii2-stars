@@ -104,6 +104,12 @@ class StarsBehaviour extends Behavior {
 
         }
 
+        if(Yii::$app->user->id){
+            $star->userId = Yii::$app->user->id;
+
+            
+        }
+
         if(!$star->save()){
             $this->setRaitingError(print_r($star->getErrors(), true));
             return false;
