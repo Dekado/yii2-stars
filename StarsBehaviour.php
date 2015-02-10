@@ -38,7 +38,7 @@ class StarsBehaviour extends Behavior {
             $nextTime = date('d.m.Y, H:i:s', strtotime($lastTime)+60*60*24);
             //$nextTime = date('%A, %e %m %G %H:%M', strtotime($lastTime)+60*60*24);
             //$this->setRaitingError('За последние сутки с этого IP адреса уже были созданы оценки более 5 раз. Извините, следущий раз вы сможете голосовать '.$nextTime);
-            $this->setRaitingError('За последние сутки с этого IP адреса было оценено слишком много отзывов, извините.');
+            $this->setRaitingError('За последние сутки с этого IP адреса было оценено слишком много объектов, извините.');
             return false;
         }
 
