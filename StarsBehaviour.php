@@ -18,6 +18,7 @@ class StarsBehaviour extends Behavior {
 
     public $ratingMinimum = 0;
     public $ratingMaximum = 5;
+    public $exceptionsIp = [];
 
 
 
@@ -25,6 +26,9 @@ class StarsBehaviour extends Behavior {
 
     public function checkIp($ip)
     {
+        if(in_array($ip, $this->exceptionsIp)){
+            return true;
+        }
         $stars = RicoRating::find()->where([
                 'ip' =>$ip,
             ]
