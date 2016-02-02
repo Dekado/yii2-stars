@@ -160,6 +160,20 @@ class StarsBehaviour extends Behavior {
             $summ += $star->value;
         }
 
-        return round($summ/count($stars));
+        return round($summ/count($stars), 1);
+    }
+
+    public function getRicoCountStars()
+    {
+        /* p($this->owner->id);
+         p($this->owner->className());die;*/
+
+        $stars = RicoRating::find()->where([
+            'itemClass' => $this->owner->className(),
+            'itemId' => $this->owner->id
+        ])->count();
+
+
+        return $stars;
     }
 }
