@@ -8,13 +8,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist costa-rico/yii2-stars "*"
+php composer.phar require --prefer-dist dekado/yii2-stars "*"
 ```
 
 or add
 
 ```
-"costa-rico/yii2-stars": "*"
+"dekado/yii2-stars": "*"
 ```
 
 to the require section of your `composer.json` file.
